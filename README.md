@@ -20,7 +20,7 @@ pip install -r requirements.txt
    - **Remover Senha**: Remove uma senha com base no ID e reorganiza as IDs das senhas no arquivo `.txt`.
 
 3. **Diretório `db/`**:
-   - **senhas.txt**: Arquivo principal que armazena as senhas geradas, junto com seus IDs e nomes.
+   - `senhas.txt`: Arquivo principal que armazena as senhas geradas, junto com seus IDs e nomes.
 
 ## Como Executar
 Certifique-se de ter o Python instalado na sua máquina.
