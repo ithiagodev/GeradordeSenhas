@@ -1,7 +1,6 @@
 import os
 import random
 import string
-import time
 
 # Diretório e caminho do arquivo
 diretorio = "db"
