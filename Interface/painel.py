@@ -1,6 +1,9 @@
 import sys,os
 sys.path.insert(0,os.path.abspath(os.curdir))
 from commands.index import *
+from rich.progress import Progress
+from time import sleep
+from random import randint
 
 def linha(tam=42):
     return "-" * tam
@@ -9,6 +12,15 @@ def cabeçalho(txt, cor="\033[34m"):
     print(linha())
     print(f'{cor}{txt.center(42)}\033[m')
     print(linha())
+
+def barra():
+    with Progress() as progress:
+        task = progress.add_task('Gerando senha segura...', total = 100)
+        while not progress.finished:
+            numero = randint(1, 35)
+            progress.update(task, advance=numero)
+            sleep(1)
+    print("Senha gerada com \033[32msucesso\033[m!")
 
 # Menu para exibir o programa principal
 def menu():
@@ -31,7 +43,7 @@ def menu():
 
             if tamanho < 8:
                 tamanho = 8
-
+            barra()
             senha = gerar_senha(tamanho)
             adicionar_senha(nome, senha)
         elif opcao == "2":
@@ -43,7 +55,7 @@ def menu():
             remover_senha_por_id(id_remover)
         elif opcao == "4":
             cabeçalho("FINALIZANDO...", cor="\033[31m")
-            time.sleep(2)
+            sleep(2)
             print("Fim do programa. \033[32mvolte sempre\033[m!")
             break
         else:
