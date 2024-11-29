@@ -57,7 +57,7 @@ def remover_senha_por_id(id_remover):
         print(f"ID {id_remover} não encontrado.")
         return
 
-    novas_linhas = [linhas[0]] 
+    novas_linhas = [linhas[0]]
     nova_id = 1
     for linha in linhas[1:]:
         if not linha.startswith(f"{id_remover} "):
