@@ -4,15 +4,19 @@ Aplicação em Python para gerar, armazenar, visualizar e remover senhas de form
 ## Requisitos
 Este projeto é desenvolvido inteiramente em Python. Certifique-se de que a versão do Python em sua máquina seja compatível com o código utilizado.
 
+Python 3.13 ou superior instalado.
+
 ### Instalação de dependências (se necessário):
 Instale as dependências executando:
 ```bash
 pip install -r requirements.txt
 ```
-**Obs:** Este projeto não utiliza bibliotecas externas, então, por padrão, não há dependências listadas.
+**Obs:** Certifique-se de ter as bibliotecas abaixo instaladas:
+
+- **rich:** Biblioteca para formatação avançada no terminal.
 
 ## Estrutura dos Arquivos
-1. **Main Script (ex.: `Painel.py`)**: Arquivo principal para executar a aplicação, contendo a função `menu` que exibe as opções interativas para o gerenciamento das senhas.
+1. **Main Script (ex.: `painel.py`)**: Arquivo principal para executar a aplicação, contendo a função `menu` que exibe as opções interativas para o gerenciamento das senhas.
 2. **Funções de Gerenciamento**:
    - **Gerar Senha**: Cria uma senha segura com letras maiúsculas, minúsculas, números e símbolos.
    - **Adicionar Senha**: Adiciona uma nova senha associada a um nome.
