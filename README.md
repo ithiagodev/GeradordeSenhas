@@ -4,7 +4,7 @@ Aplicação em Python para gerar, armazenar, visualizar e remover senhas de form
 ## Requisitos
 Este projeto é desenvolvido inteiramente em Python. Certifique-se de que a versão do Python em sua máquina seja compatível com o código utilizado.
 
-Python 3.13 ou superior instalado.
+- Python 3.13 ou superior instalado.
 
 ### Instalação de dependências (se necessário):
 Instale as dependências executando:
